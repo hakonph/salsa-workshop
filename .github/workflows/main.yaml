@@ -63,3 +63,4 @@ jobs:
       - name: Attest image
         run: cosign attest --yes --predicate cyclone.sbom.json --type cyclonedx ghcr.io/${{ github.repository }}@${{ steps.build-push.outputs.digest }}
 
+
